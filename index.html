@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Simon</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="game">
+                <div id="green-container" class="main-button-container">
+                    <div id="green" class="main-button" data-number="0"></div>
+                </div>
+                
+                <div id="red-container" class="main-button-container">
+                    <div id="red" class="main-button" data-number="1"></div>
+                </div>
+                
+                <div id="yellow-container" class="main-button-container">
+                    <div id="yellow" class="main-button" data-number="2"></div>
+                </div>
+                
+                <div id="blue-container" class="main-button-container">
+                    <div id="blue" class="main-button" data-number="3"></div>
+                </div>
+
+                <div id="center">
+                    <div id="start-screen" class="">
+                        <h1 id="title" class="text-lowercase text-center">Simon</h1>
+                        <div id="strict-container">
+                            <h2 id="strict-name" class="text-uppercase pull-left">Strict Mode</h2>
+                            <label id="strict-switch" class="pull-right">
+                                <input id="strict-checkbox" type="checkbox">
+                                <span id="slider"></span>
+                            </label>
+                        </div>
+                        
+                        <div id="start-button-container" class="text-center">
+                            <button id="start-button" class="btn btn-default text-uppercase" type="button">Start</button>
+                        </div>
+                    </div>
+                    
+                    <div id="gameplay-screen" class="text-center hidden">
+                        <div id="count-container">
+                            <div id="count">1</div>
+                            <div id="message" class="hidden">You Win!</div>
+                        </div>
+                        
+                        <button id="reset-button" class="btn btn-danger text-uppercase">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center">
+                <p class="small">Programmed by Aazib Chaudhry.</p>
+            </footer>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
